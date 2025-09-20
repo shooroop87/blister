@@ -1,0 +1,30 @@
+.single-product-wrapper .klb-people-added {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.625rem;
+  line-height: 1;
+  width: 100%;
+  border-radius: calc(var(--theme-radius-base) / 2);
+  padding: 0.75rem 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+.single-product-wrapper .klb-people-added {
+    color: #f36507 !important;
+    background-color: #fff1e6 !important;
+}
+.single-product-wrapper .klb-people-added i {
+  font-size: 1.125rem;
+}
+.single-product-wrapper .klb-people-added p {
+  font-size: 0.8125rem;
+  margin-bottom: 0;
+}
+.single-product-wrapper .klb-people-added strong {
+    margin-right: 5px;
+}
