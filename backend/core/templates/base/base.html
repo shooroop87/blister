@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'base/head_meta.html' %}
+    {% include 'base/head_seo.html' %}
+    {% include 'base/head_styles.html' %}
+</head>
+<body class="plus_jakarta_sans_cac814cd-module__4QBjTW__variable">
+    {% include 'includes/header.html' %}
+    
+    {% block content %}
+    {% endblock %}
+    
+    {% include 'includes/footer.html' %}
+    {% include 'includes/scripts.html' %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const items = document.querySelectorAll('.faq-accordion .accordion-item');
+  items.forEach((item) => {
+    const btn = item.querySelector('.accordion-button');
+    const panel = item.querySelector('.accordion-collapse');
+    btn.addEventListener('click', () => {
+      const isOpen = !btn.classList.contains('collapsed');
+      // закрываем другие
+      document.querySelectorAll('.faq-accordion .accordion-item').forEach((i) => {
+        const b = i.querySelector('.accordion-button');
+        const p = i.querySelector('.accordion-collapse');
+        if (i !== item) {
+          b.classList.add('collapsed');
+          p.classList.remove('show');
+        }
+      });
+      // переключаем текущий
+      btn.classList.toggle('collapsed', isOpen);
+      panel.classList.toggle('show', !isOpen);
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>

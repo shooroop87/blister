@@ -1,0 +1,75 @@
+{% load static %}
+{% load i18n %}
+
+<nav class="navbar navbar-expand-xl" id="navbar">
+   <div class="container-fluid">
+      <a class="navbar-brand" href="#top">
+         <b>BlisterPerPost</b>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <span class="burger-menu">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+         </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+               <a class="nav-link" href="#about">Über uns</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link" href="#benefits">Vorteile</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#how-it-works">So funktioniert’s</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#for-whom">Für wen</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#pricing">Kosten</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#feedback">Erfahrungen</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link" href="#">Medikamente bestellen</a>
+            </li>
+         </ul>
+      </div>
+
+      <div class="others-option align-items-center overflow-hidden d-none d-sm-flex">
+         <div class="option-item">
+            <a class="login-btn" href="#login">
+               <img alt="user" loading="lazy" width="20" height="20" src="{% static 'images/icons/user.svg' %}" />
+               <span>Login</span>
+            </a>
+         </div>
+         <div class="option-item">
+            <a class="default-btn" href="#register">
+               <span class="left">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                     <path d="M11.5385 0H0.461538C0.206769 0 0 0.206769 0 0.461538C0 0.716308 0.206769 0.923077 0.461538 0.923077H10.4241L0.135231 11.2122C-0.045 11.3924 -0.045 11.6845 0.135231 11.8648C0.225462 11.955 0.343385 12 0.461538 12C0.579692 12 0.697846 11.955 0.787846 11.8648L11.0769 1.57569V11.5385C11.0769 11.7932 11.2837 12 11.5385 12C11.7932 12 12 11.7932 12 11.5385V0.461538C12 0.206769 11.7932 0 11.5385 0Z" fill="white"></path>
+                  </svg>
+               </span>
+               <strong>Jetzt registrieren</strong>
+               <span class="d-none d-xxl-inline">– kostenlos</span>
+               <span class="right">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                     <path d="M11.5385 0H0.461538C0.206769 0 0 0.206769 0 0.461538C0 0.716308 0.206769 0.923077 0.461538 0.923077H10.4241L0.135231 11.2122C-0.045 11.3924 -0.045 11.6845 0.135231 11.8648C0.225462 11.955 0.343385 12 0.461538 12C0.579692 12 0.697846 11.955 0.787846 11.8648L11.0769 1.57569V11.5385C11.0769 11.7932 11.2837 12 11.5385 12C11.7932 12 12 11.7932 12 11.5385V0.461538C12 0.206769 11.7932 0 11.5385 0Z" fill="white"></path>
+                  </svg>
+               </span>
+            </a>
+         </div>
+      </div>
+   </div>
+</nav>

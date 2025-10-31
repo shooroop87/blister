@@ -1,0 +1,119 @@
+{% load static %}
+{% load i18n %}
+{% load static %}
+
+<nav class="navbar navbar-expand-xl" id="navbar">
+   <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+         <img alt="Doutor" loading="lazy" width="134" height="35" src="{% static 'images/logo.svg' %}" />
+      </a>
+      
+      <button class="navbar-toggler">
+         <span class="burger-menu">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+         </span>
+      </button>
+      
+      <div class="collapse navbar-collapse">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="dropdown-toggle nav-link" href="#">
+                  Home
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                     <path d="M13 1.5L7 6.5L1 1.5" stroke="#5A6A85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+               </a>
+               <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="#">Home Demo - 1</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Home Demo - 2</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Home Demo - 3</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item">
+               <a class="dropdown-toggle nav-link" href="#">Services <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M13 1.5L7 6.5L1 1.5" stroke="#5A6A85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+               <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Services 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Service Details</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item">
+               <a class="dropdown-toggle nav-link" href="#">Pages <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M13 1.5L7 6.5L1 1.5" stroke="#5A6A85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+               <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Book An Appointment</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Feedbacks</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Privacy Policy</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Terms & Conditions</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item">
+               <a class="dropdown-toggle nav-link" href="#">Doctors <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M13 1.5L7 6.5L1 1.5" stroke="#5A6A85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+               <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="#">Doctors</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Doctors 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Doctor Profile</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item">
+               <a class="dropdown-toggle nav-link" href="#">Pricing <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M13 1.5L7 6.5L1 1.5" stroke="#5A6A85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+               <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="#">Pricing Plan</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Pricing Plan 02</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item">
+               <a class="dropdown-toggle nav-link" href="#">Blog <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M13 1.5L7 6.5L1 1.5" stroke="#5A6A85" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+               <ul class="dropdown-menu">
+                  <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog 02</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog 03</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog Classic</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog Details 02</a></li>
+               </ul>
+            </li>
+            
+            <li class="nav-item">
+               <a class="nav-link" href="#">Contact</a>
+            </li>
+         </ul>
+      </div>
+      
+      <div class="others-option align-items-center overflow-hidden d-none d-sm-flex">
+         <div class="option-item">
+            <a class="login-btn" href="#">
+               <img alt="user" loading="lazy" width="20" height="20" src="{% static 'images/icons/user.svg' %}" />
+               <span>Login</span>
+            </a>
+         </div>
+         <div class="option-item">
+            <a class="default-btn" href="#">
+               <span class="left">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                     <path d="M11.5385 0H0.461538C0.206769 0 0 0.206769 0 0.461538C0 0.716308 0.206769 0.923077 0.461538 0.923077H10.4241L0.135231 11.2122C-0.045 11.3924 -0.045 11.6845 0.135231 11.8648C0.225462 11.955 0.343385 12 0.461538 12C0.579692 12 0.697846 11.955 0.787846 11.8648L11.0769 1.57569V11.5385C11.0769 11.7932 11.2837 12 11.5385 12C11.7932 12 12 11.7932 12 11.5385V0.461538C12 0.206769 11.7932 0 11.5385 0Z" fill="white"></path>
+                  </svg>
+               </span>
+               <strong>Register Now</strong>
+               <span class="d-none d-xxl-inline">- It's Free</span>
+               <span class="right">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                     <path d="M11.5385 0H0.461538C0.206769 0 0 0.206769 0 0.461538C0 0.716308 0.206769 0.923077 0.461538 0.923077H10.4241L0.135231 11.2122C-0.045 11.3924 -0.045 11.6845 0.135231 11.8648C0.225462 11.955 0.343385 12 0.461538 12C0.579692 12 0.697846 11.955 0.787846 11.8648L11.0769 1.57569V11.5385C11.0769 11.7932 11.2837 12 11.5385 12C11.7932 12 12 11.7932 12 11.5385V0.461538C12 0.206769 11.7932 0 11.5385 0Z" fill="white"></path>
+                  </svg>
+               </span>
+            </a>
+         </div>
+      </div>
+   </div>
+</nav>

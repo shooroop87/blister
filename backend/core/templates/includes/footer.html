@@ -1,0 +1,109 @@
+{% load static %}
+{% load i18n %}
+<footer class="footer-area">
+  <div class="ptb-140">
+    <div class="container">
+      <!-- top -->
+      <div class="footer-top-content">
+        <div class="row justify-content-between align-items-center g-4">
+          <div class="col-lg-8 col-md-12">
+            <div class="left">
+              <div class="widget-logo">
+                <a href="/">
+                  <b>BlisterPerPost</b>
+                </a>
+              </div>
+              <p>
+                BlisterPerPost liefert <strong>individuelle Blisterpackungen</strong>, zubereitet von zertifizierten Apotheker:innen.
+                Ihre Medikamente werden nach Dosis und Einnahmezeitpunkt sortiert und <strong>alle 14 Tage</strong> zu Ihnen nach Hause gesendet –
+                sauber, sicher und pharmazeutisch geprüft (inkl. E-Rezept-Unterstützung).
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <ul class="right-social">
+              <li><a href="https://www.facebook.com/yourpage" target="_blank">
+                <img alt="facebook" width="25" height="25" src="{% static 'images/icons/facebook.svg' %}" /></a></li>
+              <li><a href="https://www.instagram.com/yourpage" target="_blank">
+                <img alt="instagram" width="25" height="25" src="{% static 'images/icons/instagram.svg' %}" /></a></li>
+              <li><a href="https://www.linkedin.com/company/yourpage" target="_blank">
+                <img alt="linkedin" width="25" height="25" src="{% static 'images/icons/linkedin.svg' %}" /></a></li>
+              <li><a href="https://x.com/yourpage" target="_blank">
+                <img alt="x" width="25" height="25" src="{% static 'images/icons/x.svg' %}" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- middle -->
+      <div class="row justify-content-between g-4 mt-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Über uns</h3>
+            <ul class="links">
+              <li><a href="/how-it-works/">So funktioniert’s</a></li>
+              <li><a href="/pricing/">Preise</a></li>
+              <li><a href="/faq/">FAQ</a></li>
+              <li><a href="/contact/">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Leistungen</h3>
+            <ul class="links">
+              <li><a href="/blister/">Blister-Service (alle 14 Tage)</a></li>
+              <li><a href="/pharmacy/">Zusätzliche Arzneimittel bestellen</a></li>
+              <li><a href="/shipping/">Versand & Lieferung (DHL)</a></li>
+              <li><a href="/returns/">Rückgabe & Erstattung</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Rechtliches</h3>
+            <ul class="links">
+              <li><a href="/privacy/">Datenschutzerklärung (DSGVO)</a></li>
+              <li><a href="/terms/">AGB</a></li>
+              <li><a href="/consent/">Patienteneinwilligung</a></li>
+              <li><a href="/cookies/">Cookie-Einstellungen</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-footer-widget">
+            <h3>Kontakt</h3>
+            <ul class="links">
+              <li><a href="mailto:service@blisterperpost.de">service@blisterperpost.de</a></li>
+              <li><a href="tel:+49XXXXXXXXXXX">+49 (0) XXX XXX XX XX</a></li>
+              <li><span>BlisterPerPost Apothekenservice</span></li>
+              <li><span>Straße & Nr., PLZ Ort, Deutschland</span></li>
+              <li><span>Mo–Fr 8:00–18:00, Sa 9:00–12:00</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+    <div class="container">
+      <!-- bottom -->
+      <div class="copyright-area mt-4">
+        <div class="row justify-content-between align-items-center g-4">
+          <div class="col-lg-6 col-md-12">
+            <p>© <span>BlisterPerPost</span> {{ now|date:"Y" }}. Alle Rechte vorbehalten.</p>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <ul class="lists">
+              <li><a href="/privacy/">Datenschutz</a></li>
+              <li><a href="/impressum/">Impressum</a></li>
+              <li><a href="/terms/">AGB</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>

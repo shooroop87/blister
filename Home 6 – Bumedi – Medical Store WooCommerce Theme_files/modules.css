@@ -877,7 +877,7 @@ button:not(.slick-arrow).red-light:hover, .button.red-light:hover, input[type=su
   color: var(--yellow-300);
 }
 .site-announcement.has-pattern {
-  background-image: url(../../img/pattern-bg.png);
+  background-image: url(../../images/pattern-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
