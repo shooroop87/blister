@@ -14067,7 +14067,8 @@ Services Area CSS
   color: #336AEA;
 }
 .service-card .bottom .list li span {
-  color: #42577a;
+  color: #2a3547;
+  font-weight: 500;
 }
 .service-card .bottom .list li:last-child {
   margin-bottom: 0;
