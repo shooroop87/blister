@@ -286,6 +286,17 @@ PARLER_LANGUAGES = {
 }
 
 # ===================== DJANGO TINYMCE =====================
+BLEACH_ALLOWED_TAGS = [
+    'i', 'span',
+]
+
+BLEACH_ALLOWED_ATTRIBUTES = {
+    '*': ['class', 'style', 'title', 'aria-label'],
+    'i': ['class', 'style', 'data-*'],
+    'span': ['class', 'style', 'data-*'],
+}
+
+BLEACH_STRIP = False
 
 # Базовые настройки TinyMCE
 # TINYMCE_API_KEY = 'f80axcxfwy4juoux11elmrxusxzpkbrz85w43nyvug2yta1a'
@@ -396,9 +407,11 @@ TINYMCE_DEFAULT_CONFIG = {
             padding: 20px;
         }
     """,
-    # Разрешенные элементы (аналог htmlSupport в CKEditor)
+    # Разрешенные элементы
     "extended_valid_elements": """
         div[class|style|data-*],
+        span[class|style|data-*],
+        i[class|style|data-*],
         span[class|style|data-*],
         img[class|src|alt|title|width|height|loading|data-*],
         a[href|target|rel|class|style],

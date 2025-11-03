@@ -198,11 +198,7 @@
 .work-image{
   position:relative;
   width:100%;
-  /* вариант 1: адаптивная минимальная высота */
-  min-height:clamp(420px, 60vh, 780px);
-
-  /* альтернативно можно зафиксировать пропорции:
-     aspect-ratio: 4 / 3;  (оставь только один из подходов) */
+  height: 100%!important;
 }
 
 /* изображение заполняет контейнер полностью */
@@ -275,4 +271,39 @@
 }
 body > div.app-area > div.container > div > div.col-lg-5.col-md-12 > div > img {
   width: 85%!important;
+}
+/* Растянуть колонки по одинаковой высоте */
+#how-it-works .row.align-items-center.g-5 {
+  align-items: stretch;                /* переопределяем align-items-center */
+}
+
+/* Делаем колонки флекс-контейнерами с полной высотой */
+@media (min-width: 992px) {
+  #how-it-works .col-lg-6 {
+    display: flex;
+  }
+}
+
+/* Левая картинка заполняет колонку целиком */
+#how-it-works .work-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* Само изображение растягиваем по высоте колонки */
+#how-it-works .work-image img {
+  display: block;
+  width: 100%;
+  height: 100% !important;             /* перекрываем html-атрибут height */
+  object-fit: cover;                   /* заполняет без искажений, обрезая лишнее */
+}
+
+/* Чтобы правая колонка могла быть высокой без схлопывания внутренних блоков */
+#how-it-works .work-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
